@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <link rel="icon" href="../static/resources/leaf.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Plant Disease Detection</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="../static/resources/logo.png" alt="logo"></a><h3>Plant Disease Detector</h3>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h4>Upload a picture of a leaf and we will analyze it for you!!</h4>
+            <form id="analysis-form" enctype="multipart/form-data">
+                <div class="imgbox"><img src="../static/resources/upload-placeholder.jpg" class="img" id="selected_image">
+                    <div class="middle">
+                        <input name="Select File" id="imagefile" type="file" />
+                        <div class="add"><span>SELECT IMAGE</span></div>
+                    </div>
+                </div>
+                <button id="analyze-button" class="analyze-button">
+                    Analyze
+                </button>
+                <div id="result">result : </div> 
+            </form>
+        </div>
+    </div>
+	<script src="../static/client.js"></script>
+</body>
+</html>
